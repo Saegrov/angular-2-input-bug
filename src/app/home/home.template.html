@@ -1,0 +1,35 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <md-input
+        placeholder="Here is some placeholder text"
+        [value]="localState.value"
+        (input)="localState.value = $event.target.value"
+        autofocus>
+
+        <md-hint>Hello!</md-hint>
+      </md-input>
+    </div>
+    <div class="col-xs-12">
+      <md-input
+        placeholder="Other placeholder"
+        [value]="localState.value"
+        (input)="localState.value = $event.target.value"
+        autofocus>
+
+        <md-hint>Hello!</md-hint>
+      </md-input>
+    </div>
+    <div class="col-xs-12">
+      <md-input
+        placeholder="Submit Local State to App State"
+        [value]="localState.value"
+        (input)="localState.value = $event.target.value"
+        autofocus>
+
+        <md-hint>I am hint!</md-hint>
+      </md-input>
+    </div>
+  </div>
+</div>
